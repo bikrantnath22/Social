@@ -12,8 +12,7 @@ const eventRoutes = require("./routes/eventRoutes");
 const { injectToken } = require("./middleware/auth");
 const PORT = process.env.PORT || 8080;
 
-const DB =
-  "mongodb+srv://admin:admin@tezhack.mgxia.mongodb.net/?retryWrites=true&w=majority&appName=tezhack";
+const DB =// here database link
 app.use(morgan("tiny"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
